@@ -1,0 +1,92 @@
+*{ 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #8c1c13; 
+    margin: 20px;
+    padding: 20px; 
+}
+
+.card { 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 16px; 
+    background-color: #E7D7C1; 
+    border: 10px solid #735751; 
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+     p{color: #735751; font-size: 14px;}
+     h1{color: #735751; font-size: xx-large; margin: 0 auto;}
+}
+
+.collection-grid {
+    margin: 48px 0;
+    flex-flow: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+
+.collection-card {
+   
+    border: 5px solid #E7D7C1;
+    padding: 16px;
+    width: 350px;
+    flex: 1 1 100%;
+    background-color: #a78a7f;
+    
+}
+
+.collection-card h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    text-align: center;
+    color:#735751
+}
+
+.collection-card .details {
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-style: italic;
+    text-align: center;
+    color: #E7D7C1
+
+}
+
+
+.description {
+    color: #735751;
+    font-size: 20px;
+    margin-bottom: 10;
+    line-height: 1.6;
+}
+
+.button-01 {
+    background-color: #bf4342;
+    color: #E7D7C1;
+    font-style: italic;
+    padding: 16px 32px;
+    border: 2px solid #bf4342;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    
+}
+
+.button-01:hover {
+    background-color: #E7D7C1;
+    color: #bf4342;
+    border-color: #bf4342;
+}
+
+
+@media(width>=480px){
+    .collection-card{flex: 1 1 45%}
+}
+@media(width>=1024px){
+    .collection-card{flex: 1 1 25%}
+}
