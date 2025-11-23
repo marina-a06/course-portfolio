@@ -183,7 +183,7 @@ code {
 }
 
 .nav-custom a:hover {
-  background: rgba(11, 112, 11, 0.25);
+  background: rgba(90, 119, 90, 0.25);
   backdrop-filter: blur(100px);
 }
 
@@ -240,7 +240,45 @@ code {
   margin-top: 100px;
 }
 
+.nav-spin {
+  position: fixed;
+  background: #b65fa0;
+  padding: 50px;
+  font-size: x-large;
+  text-align: center;
+}
 
+.nav-spin ul {
+  display: flex;
+    justify-content: center;
+  gap: 400px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #b65fa0;
+}
+
+.nav-spin a {
+  color:#f0d8ea;
+ border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(107, 9, 78);
+  transition:
+    background-color .5s,
+    rotate .5s;
+}
+
+.nav-spin a:hover {
+   background-color: #ffcccc;
+  rotate: 180deg;
+}
+
+.nav-spin+main {
+   margin-top: 250px;
+}
 @media (width >=480px) {}
 
 @media (width >=1024px) {}
